@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout tools:context=".AdminKategoriActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:text="Yeni ürün ekle"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/slogan_category"/>
+
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="45dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linear1_category_layout"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@+id/slogan_category">
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/t_shirt"
+        android:src="@drawable/tshirts"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/spor_tshirt"
+        android:src="@drawable/sports"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/kadin_elbise"
+        android:src="@drawable/female_dresses"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:id="@+id/sweater"
+        android:src="@drawable/sweather"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="45dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linear2_category_layout"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linear1_category_layout">
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/gozluk"
+        android:src="@drawable/glasses"/>
+
+    <ImageView
+        android:id="@+id/el_canta"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:src="@drawable/purses_bags" />
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/sapka"
+        android:src="@drawable/hats"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:id="@+id/ayyakabi"
+        android:src="@drawable/shoess"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="45dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linear3_category_layout"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linear2_category_layout">
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/kulaklik"
+        android:src="@drawable/headphoness"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="90dp"
+        android:id="@+id/laptop"
+        android:src="@drawable/laptops"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/saat"
+        android:src="@drawable/watches"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:id="@+id/cep_telefonu"
+        android:src="@drawable/mobiles"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "238190826842",
+    "firebase_url": "https://eticaret-24c5a.firebaseio.com",
+    "project_id": "eticaret-24c5a",
+    "storage_bucket": "eticaret-24c5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238190826842:android:eaf012b60f2fcc1e",
+        "android_client_info": {
+          "package_name": "com.example.murat.eticaret"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238190826842-10k1ndnmrb197eudbc0cvve9ugd12668.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.murat.eticaret",
+            "certificate_hash": "5b4733449ec21efe33d3ece746cb975d2d7d4698"
+          }
+        },
+        {
+          "client_id": "238190826842-iivr6q1lo5tdc9bsbp9v37emjrdselnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5MkCrIGiYJva4noFP7Jjndwj7_I5ZdG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238190826842-iivr6q1lo5tdc9bsbp9v37emjrdselnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

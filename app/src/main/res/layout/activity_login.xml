@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_login"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/login_applogo"
+        android:src="@drawable/_applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_telno"
+        android:layout_below="@id/login_applogo"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Telefon numarası"
+        android:padding="12dp"
+        android:background="@drawable/input_design"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorButon"
+        android:textSize="17dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/login_sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_telno"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/input_design"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorButon"
+        android:textSize="17dp"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login_sifre"
+        android:layout_marginTop="5dp"
+        >
+        <CheckBox
+            android:id="@+id/login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Beni Hatırla"
+            android:buttonTint="@color/colorButon"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sifre_hatirlatma"
+            android:text="Şifremi Unuttum?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="60dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_sifre"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif"
+        android:text="Oturum Aç"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_link"
+        android:text="admin"
+        android:textSize="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@id/login_btn"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/No_admin_link"
+        android:text="admin değilim?"
+        android:textSize="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/login_btn"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="35dp"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>

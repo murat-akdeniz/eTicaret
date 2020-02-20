@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunDetaylariActivity">
+    
+    <ImageView
+        android:id="@+id/urun_resim_detaylari"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/urun_adi_detaylari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urun_resim_detaylari"
+        android:text="Ürün Adı"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/urun_tanim_detaylari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urun_adi_detaylari"
+        android:text="Ürün Tanımı"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/urun_fiyat_detaylari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urun_tanim_detaylari"
+        android:text="Ürün Fiyatı"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/urun_tanim_detaylari"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/eksi_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="degerAzalt"
+            android:text="-"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/urun_sayisi"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/eksi_btn"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/arti_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorPrimary"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="degerArtir"
+            android:textColor="@android:color/white"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sepete_ekle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorPrimary"
+        android:text="Sepete Ekle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+
+
+
+</RelativeLayout>
